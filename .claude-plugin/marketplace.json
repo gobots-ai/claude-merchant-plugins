@@ -1,0 +1,17 @@
+{
+  "name": "gobots",
+  "owner": {
+    "name": "GoBots",
+    "url": "https://gobots.com.br"
+  },
+  "metadata": {
+    "description": "Plugins do Claude para lojistas do Mercado Livre que usam a GoBots."
+  },
+  "plugins": [
+    {
+      "name": "gobots-ads",
+      "source": "./plugins/gobots-ads",
+      "description": "Diagnóstico de Product Ads do Mercado Livre pelo MCP GoBots: placar da loja, catálogo, promoções e atendimento."
+    }
+  ]
+}

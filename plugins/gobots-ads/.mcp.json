@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "gobots": {
+      "type": "http",
+      "url": "https://open-api.live.gobots.com.br/mcp"
+    }
+  }
+}

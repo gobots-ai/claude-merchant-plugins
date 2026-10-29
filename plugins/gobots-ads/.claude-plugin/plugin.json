@@ -1,0 +1,18 @@
+{
+  "name": "gobots-ads",
+  "version": "0.1.0",
+  "description": "Diagnóstico de Product Ads do Mercado Livre pelo MCP GoBots: placar da loja, catálogo, promoções e atendimento.",
+  "author": {
+    "name": "GoBots",
+    "url": "https://gobots.com.br"
+  },
+  "homepage": "https://developers.gobots.com.br/guias/assistente-de-ia/",
+  "keywords": [
+    "mercado-livre",
+    "product-ads",
+    "gobots",
+    "mcp"
+  ],
+  "privacyPolicyUrl": "https://gobots.com.br/politica-de-privacidade",
+  "license": "LicenseRef-Proprietary"
+}
