@@ -9,9 +9,9 @@
   },
   "plugins": [
     {
-      "name": "gobots-ads",
-      "source": "./plugins/gobots-ads",
-      "description": "Diagnóstico de Product Ads do Mercado Livre pelo MCP GoBots: placar da loja, catálogo, promoções e atendimento."
+      "name": "gobots",
+      "source": "./plugins/gobots",
+      "description": "GoBots no Claude: lojas, Product Ads, catálogo, promoções, recomendações e métricas de atendimento da sua conta no Mercado Livre, pelo MCP GoBots."
     }
   ]
 }
