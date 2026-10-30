@@ -9,6 +9,8 @@
   },
   "icon": "./.claude-plugin/icon.png",
   "homepage": "https://developers.gobots.com.br/guias/assistente-de-ia/",
+  "documentationUrl": "https://developers.gobots.com.br/guias/assistente-de-ia/",
+  "repository": "https://github.com/gobots-ai/claude-merchant-plugins",
   "keywords": [
     "gobots",
     "mercado-livre",
@@ -17,5 +19,6 @@
     "mcp"
   ],
   "privacyPolicyUrl": "https://gobots.com.br/politica-de-privacidade",
+  "supportUrl": "https://gobots.atlassian.net/servicedesk/customer/portal/7",
   "license": "LicenseRef-Proprietary"
 }
