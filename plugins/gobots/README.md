@@ -8,7 +8,7 @@ Plugin oficial da GoBots para o Claude. Ele conecta o Claude à sua conta GoBots
 |---|---|
 | MCP `gobots` | Servidor `https://open-api.live.gobots.com.br/mcp` com as ferramentas da GoBots: lojas, Product Ads (campanhas, adgroups, desempenho, relatórios), itens, competição de catálogo, promoções, recomendações GoBots e métricas de atendimento da IA e do vendedor. |
 | Skill `ads-diagnostico` | Lê a conta e responde "como está": placar de 30 dias da loja, campanhas travadas por orçamento ou por rank, catálogo e promoções de um item, e atendimento da IA contra o do vendedor. Nunca altera nada. |
-| Skill `gobots-ads-base` | Base de conhecimento compartilhada: glossário, régua de decisão, receitas de chamada do MCP, guardrails de escrita, formato de resposta e margens por grupo de produto. |
+| Skill `gobots-ads-base` | Base de conhecimento compartilhada: glossário, régua de decisão, receitas de chamada do MCP, guardrails de escrita, formato de resposta, margens por grupo de produto e quando enviar um relato à GoBots e consultar o status dele. |
 
 ## Instalação
 
