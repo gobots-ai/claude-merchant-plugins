@@ -4,7 +4,7 @@ O MCP GoBots tem duas ferramentas para o agente avisar a equipe da GoBots sobre 
 
 ## Quando enviar
 
-- **`bug`: envie por conta própria** quando uma ferramenta GoBots falhar ou se comportar errado: erro inesperado, `source_unavailable` que persiste depois da repetição, resposta que contradiz o próprio schema ou outra leitura da mesma conta. Avise o lojista na resposta que o relato foi enviado.
+- **`bug`: envie por conta própria** quando uma ferramenta GoBots falhar ou se comportar errado: erro inesperado, `source_unavailable` que persiste depois da repetição, resposta que contradiz o próprio schema ou outra leitura da mesma conta. Avise o lojista na resposta que o relato foi enviado. Falha do próprio `submit_feedback` ou do `get_feedback_status` não vira relato: diga ao lojista e siga.
 - **`suggestion`: só com o sim do lojista.** Quando faltar uma ferramenta ou um campo (por exemplo, uma das lacunas de `receitas-mcp.md` que travou o pedido dele), ofereça enviar a sugestão, mostre o texto e envie só depois que ele concordar nesta conversa.
 - Não envie relato sobre dado do Mercado Livre que está certo e só desagrada ao lojista, nem sobre erro de uso seu (filtro faltando, id inválido): corrija a chamada.
 
@@ -22,6 +22,6 @@ O MCP GoBots tem duas ferramentas para o agente avisar a equipe da GoBots sobre 
 
 ## Quando a ferramenta recusa
 
-- `feature_not_enabled`: o recurso ainda não está ligado para este lojista. Diga isso em uma frase e siga com o pedido dele. Não repita a chamada nem tente enviar de outro jeito.
+- `feature_not_enabled`: o recurso ainda não está ligado para este lojista. Diga isso em uma frase e siga com o pedido dele. Não repita a chamada nem tente enviar de outro jeito, e não envie mais relatos nesta conversa.
 - `rate_limited`: o limite diário de relatos acabou. Diga ao lojista e não tente de novo hoje.
 - `not_found` no status: o `feedback_id` não é deste lojista ou está errado. Não adivinhe outro.
