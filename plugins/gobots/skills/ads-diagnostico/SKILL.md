@@ -10,7 +10,8 @@ Esta skill responde "como está" e aponta "o que olhar". Ela só lê. Quando o d
 Antes de começar, leia da base `gobots-ads-base`:
 - `references/receitas-mcp.md` (como chamar o MCP sem cair nem estourar),
 - `references/formato-saida.md` (o placar e o bloco de recomendação),
-- `references/glossario.md` quando for explicar um termo.
+- `references/glossario.md` quando for explicar um termo,
+- `references/relatos.md` quando uma ferramenta falhar ou o lojista pedir o status de um relato.
 
 ## Três seções, acionadas pela pergunta
 
@@ -56,9 +57,10 @@ Item fora de catálogo (`not_listed`, `item_not_opted_in`) não tem buy box para
 
 ## Regras desta skill
 
+- **Relato não é escrita na conta.** `submit_feedback` só avisa a GoBots; `bug` vai sem perguntar, `suggestion` só com o sim do lojista (ver `relatos.md`).
 - **Nunca chame ferramenta de escrita.** Se o lojista pedir "e pausa isso", explique que a `ads-otimizar` faz com confirmação e ofereça seguir para ela.
 - **Sempre por loja.** Chamada conta inteira cai quando há loja sem anunciante.
-- **Repita uma vez** em `source_unavailable` ou `partial`; se persistir, registre a lacuna na resposta.
+- **Repita uma vez** em `source_unavailable` ou `partial`; se persistir, registre a lacuna na resposta e envie um relato `bug` como manda `relatos.md`.
 - **`sold_quantity` é acumulado de vida.** Nunca apresente como venda recente, e diga isso quando listar best-sellers.
 - **Métricas da lista de campanhas são do último dia.** Para 30 dias use `get_ads_performance` e o relatório semanal.
 - **Não compare com outras contas** nem invente benchmark. Os números do lojista se comparam com a semana anterior dele e com os alvos dele.
