@@ -1,6 +1,6 @@
 ---
 name: gobots-ads-base
-description: Base de conhecimento compartilhada das skills de Product Ads da GoBots (ads-diagnostico, ads-otimizar, ads-estruturar). Não tem fluxo próprio. Leia as referências daqui quando uma dessas skills mandar, ou quando o usuário perguntar o que é ROAS objetivo, ACOS, impression share, perda por orçamento ou por rank, adgroup, janela de atribuição, ou como escolher o ROAS pela margem, sem pedir nenhuma ação na conta.
+description: Base de conhecimento compartilhada das skills de Product Ads da GoBots (ads-diagnostico, ads-otimizar, ads-estruturar). Não tem fluxo próprio. Leia as referências daqui quando uma dessas skills mandar, ou quando o usuário perguntar o que é ROAS objetivo, ACOS, impression share, perda por orçamento ou por rank, adgroup, janela de atribuição, ou como escolher o ROAS pela margem, ou como enviar um relato à GoBots e consultar o status dele, sem pedir nenhuma ação na conta.
 ---
 
 # gobots-ads-base
@@ -19,11 +19,14 @@ Ela existe para que a mesma régua valha no diagnóstico, na otimização e na r
 | `references/guardrails.md` | antes de qualquer ferramenta de escrita, e para saber o que nunca fazer por conta própria |
 | `references/formato-saida.md` | ao montar a resposta final de um diagnóstico ou de uma recomendação |
 | `references/margens.md` | quando a decisão depender da margem do lojista (ROAS objetivo, orçamento de campanha nova) |
+| `references/relatos.md` | quando uma ferramenta GoBots falhar ou faltar, para enviar um relato à GoBots, e quando o lojista pedir o status de um relato |
 
 ## Como as skills de uso usam esta base
 
 - `ads-diagnostico` lê glossário, receitas e formato. Nunca escreve.
 - `ads-otimizar` lê tudo, em especial régua, guardrails e margens. Escreve só depois do portão de confirmação descrito em `guardrails.md`.
 - `ads-estruturar` lê tudo e ainda depende de lacunas do MCP listadas em `receitas-mcp.md`.
+
+Todas as skills que chamam ferramentas seguem `relatos.md` quando uma ferramenta GoBots falha.
 
 Se o usuário só quer entender um conceito, responda com o glossário e pare. Não puxe dados da conta sem ele pedir.
